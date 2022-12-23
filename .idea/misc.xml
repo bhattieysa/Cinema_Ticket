@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-ldpi/detailss.xml" value="0.117" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-mdpi/radio_button_background.xml" value="0.1175" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-xxhdpi/et_bgs.xml" value="0.1475" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-xxhdpi/gradient_bg.xml" value="0.1475" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-xxhdpi/ic_stop_black_24dp.xml" value="0.1475" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-xxhdpi/screen_rectangle.xml" value="0.1475" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-xxxhdpi/bottomnav.xml" value="0.1475" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-xxxhdpi/et_circle.xml" value="0.2075" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-xxxhdpi/ic_favorite_border_black_35dp.xml" value="0.1475" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-xxxhdpi/language.xml" value="0.1475" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable-xxxhdpi/selector.xml" value="0.1475" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable/et_bg.xml" value="0.1455" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.157" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.157" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable/ic_confirmation_number_black_24dp.xml" value="0.157" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable/login_btn.xml" value="0.1455" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/drawable/main_logo.xml" value="0.118" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_admin_home.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_all_users.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_edit_movie.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_login.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_movies.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_new_movies.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_reservation_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_reservations.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_signup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_user_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/activity_user_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/favorite_card.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/film_card.xml" value="0.203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_confirm_booking.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_datetime.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_favorite_details.xml" value="0.14907407407407408" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_favorites.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_make_reservation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_my_reservations.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_payment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_reservations.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/fragment_ticket_details.xml" value="0.14907407407407408" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/movie_card.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/tview.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/user_favorite_card.xml" value="0.203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/user_reservation_card.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/layout/user_row.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/menu/bottomnav.xml" value="0.1" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/menu/menu.xml" value="0.1" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/CinemaTicket/app/src/main/res/menu/menus.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

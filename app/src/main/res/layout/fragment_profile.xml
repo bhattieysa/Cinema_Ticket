@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_imageview"
+        android:layout_width="@dimen/_150sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        android:src="@drawable/download"
+        />
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_imageview"
+        >
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/red"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+
+            <EditText
+                android:id="@+id/name_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@color/transparent"
+                android:hint="add@gmail.com"
+                android:inputType="text"
+                android:drawableLeft="@drawable/ic_person"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toEndOf="@+id/email_imageview"
+                app:layout_constraintTop_toBottomOf="@+id/workplace_textview" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+
+            <TextView
+                android:id="@+id/mail_textview"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/transparent"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/_20ssp"
+                android:drawableLeft="@drawable/ic_mail"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toEndOf="@+id/phone_imageview"
+                app:layout_constraintTop_toBottomOf="@+id/email_textview"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            >
+
+
+
+            <EditText
+                android:id="@+id/phonetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_20ssp"
+                android:drawableLeft="@drawable/ic_call"
+                android:singleLine="true"
+                android:background="@color/transparent"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toEndOf="@+id/video_imageview"
+                app:layout_constraintTop_toBottomOf="@+id/phone_textview"
+                 />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            >
+
+
+            <EditText
+                android:id="@+id/passtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_20ssp"
+                android:drawableLeft="@drawable/ic_password"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.031"
+                app:layout_constraintStart_toEndOf="@+id/video_imageview"
+                app:layout_constraintTop_toBottomOf="@+id/phone_textview"
+                />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/vieww"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/red"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/update_btn"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/login_btn"
+            android:text="Update"
+            android:gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:fontFamily="sans-serif-medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vieww" />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/logout_btn"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="LogOut"
+        android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+        android:gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

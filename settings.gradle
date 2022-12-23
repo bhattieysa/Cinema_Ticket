@@ -1,0 +1,41 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+            credentials {
+                // Be sure to add these non-sensitive credentials in order to retrieve dependencies from
+                // the private repository.
+                username MavenUserName
+                password MavenUserPassword
+            }
+        }
+
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+            credentials {
+                // Be sure to add these non-sensitive credentials in order to retrieve dependencies from
+                // the private repository.
+                username MavenUserName
+                password MavenUserPassword
+            }
+        }
+
+    }
+
+    }
+
+rootProject.name = "Cinema Ticket"
+include ':app'

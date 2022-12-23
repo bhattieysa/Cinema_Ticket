@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Admin.EditMovieActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/pflimage"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/camera" />
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/pflimage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/jobtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_below="@id/jobtitle"
+                    android:background="@drawable/et_bg"
+
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_height="@dimen/_40sdp">
+
+                    <EditText
+                        android:id="@+id/ettitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_3sdp"
+                        android:background="@color/transparent"
+                        android:hint="Enter Title"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_13ssp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/rel1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Summary"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp"
+                    android:layout_below="@id/textView3"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/et_bg">
+
+                    <EditText
+                        android:id="@+id/etdesc"
+                        android:layout_width="373dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_3sdp"
+                        android:background="@color/transparent"
+                        android:gravity="top|left"
+                        android:hint="Enter Summary"
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:maxLines="10"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_13ssp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel3"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/rel2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/jobloc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Release Date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/jobloc"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/et_bg">
+
+                    <EditText
+                        android:id="@+id/etdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_3sdp"
+                        android:background="@color/transparent"
+                        android:hint="01/01/2011"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_13ssp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel4"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/rel3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Genre"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/genre"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/et_bg">
+
+                    <EditText
+                        android:id="@+id/etgenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_3sdp"
+                        android:background="@color/transparent"
+                        android:hint="Genre"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_13ssp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel5"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/rel4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Language"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/language"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/et_bg">
+
+                    <EditText
+                        android:id="@+id/etlang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_3sdp"
+                        android:background="@color/transparent"
+                        android:hint="language"
+                        android:inputType="textPersonName"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_13ssp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel6"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/rel5"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <TextView
+                    android:id="@+id/Shows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="1st Show"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/Shows"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/et_bg">
+
+                    <TextView
+                        android:id="@+id/firstShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_3sdp"
+                        android:background="@color/transparent"
+                        android:hint="10:00 am"
+                        android:inputType="time"
+                        android:padding="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_13ssp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel7"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/rel5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <TextView
+                    android:id="@+id/secshows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="2nd Show"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/secshows"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/et_bg">
+
+                    <TextView
+                        android:id="@+id/secondshow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_3sdp"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/_8sdp"
+                        android:hint="10:00 am"
+                        android:inputType="time"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_13ssp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel8"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/rel5"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <TextView
+                    android:id="@+id/thirdshows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="3rd Show"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/thirdshows"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="@drawable/et_bg">
+
+                    <TextView
+                        android:id="@+id/thirdShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_3sdp"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/_8sdp"
+                        android:hint="10:00 am"
+                        android:inputType="time"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_13ssp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/rel6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+
+                <TextView
+                    android:id="@+id/postMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/login_btn"
+                    android:gravity="center"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

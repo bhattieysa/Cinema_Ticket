@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    android:id="@+id/datfrag"
+    tools:context=".User.DatetimeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Available Shows"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/titletag"
+        android:textSize="@dimen/_25ssp"/>
+
+
+    <RadioGroup
+        android:id="@+id/hour_choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titletag">
+
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/radio_button_background"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="10:00 am"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+
+
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/radio_button_background"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="10:00 am"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+
+
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/radio_button_background"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="10:00 am"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvadate"
+        app:layout_constraintTop_toBottomOf="@id/hour_choices"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Choose Date"
+        android:textSize="@dimen/_25ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvadate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/et_bgs"
+        android:text="Select Date"
+        android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+        android:drawablePadding="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/_13sdp"
+        android:textColor="@color/white"
+        android:id="@+id/moviedate"
+        android:padding="@dimen/_3sdp"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/login_btn"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/moviedate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/nxttMove"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

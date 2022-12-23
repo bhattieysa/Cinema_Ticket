@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/grey"
+        app:cardElevation="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/moviename"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Tekken"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_18ssp"
+                android:layout_margin="@dimen/_8sdp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ticketdetail"
+                android:text="Ticket Details"
+                app:layout_constraintTop_toBottomOf="@id/moviename"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="@dimen/_10sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:textColor="@color/selected"
+                android:textSize="@dimen/_15ssp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tickettime"
+                android:text="Ticket Details"
+                app:layout_constraintTop_toBottomOf="@id/moviename"
+                app:layout_constraintStart_toEndOf="@id/ticketdetail"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/selected"
+                android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                android:drawablePadding="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:id="@+id/delete"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintBottom_toTopOf="@id/tickettime"
+                android:src="@drawable/ic_baseline_delete_24"/>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

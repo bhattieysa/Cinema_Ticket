@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.DetailsFragment"
+    android:id="@+id/hfragment"
+    android:background="@color/black">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:src="@drawable/poster"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/image_movie"/>
+
+
+            <TextView
+                android:id="@+id/text_view_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="16dp"
+                android:text="Genre"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/image_movie"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/darker_gray" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/genre_rating_delimiter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/image_movie"
+                app:layout_constraintStart_toEndOf="@id/text_view_genre"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="|"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+
+            <TextView
+                android:id="@+id/text_view_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/image_movie"
+                app:layout_constraintStart_toEndOf="@id/genre_rating_delimiter"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Language"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@android:color/darker_gray"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/image_movie"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_favorite_border_black_35dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:id="@+id/favert"/>
+
+
+
+
+            <TextView
+                android:id="@+id/text_viewrel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="16dp"
+                android:text="Released On: "
+                app:layout_constraintTop_toBottomOf="@id/text_view_genre"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/darker_gray" />
+
+
+
+            <TextView
+                android:id="@+id/text_viewreleased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text=" "
+                app:layout_constraintTop_toBottomOf="@id/text_view_genre"
+                app:layout_constraintStart_toEndOf="@id/text_viewrel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/white" />
+
+
+
+
+
+            <TextView
+        android:id="@+id/titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_viewreleased" />
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:text="TITLE"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titletext" />
+
+    <RelativeLayout
+        android:id="@+id/rel22"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Summary:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_below="@id/textView3"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            >
+
+            <TextView
+                android:id="@+id/tvdescr"
+                android:layout_width="373dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_3sdp"
+                android:background="@color/transparent"
+                android:gravity="top|left"
+                android:lines="8"
+                android:maxLines="10"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_13ssp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/reserve_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/login_btn"
+                android:text="Reserve"
+                android:gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp"
+                app:fontFamily="sans-serif-medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rel22" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:id="@+id/confrag"
+    tools:context=".User.ConfirmBookingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_margin="@dimen/_10sdp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:background="@drawable/detailss"
+    android:backgroundTint="@color/grey">
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maintitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Movie Details"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20ssp"
+        android:layout_margin="@dimen/_15sdp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movietitle"
+        app:layout_constraintTop_toBottomOf="@id/maintitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Black Adam 2022"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18ssp"
+        android:layout_margin="@dimen/_15sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genretxt"
+        app:layout_constraintTop_toBottomOf="@id/movietitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/detailss"
+        android:backgroundTint="@color/grey"
+        android:text="Action"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/movietitle"
+        app:layout_constraintStart_toEndOf="@id/genretxt"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="|"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        android:id="@+id/movieslash"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/langtxt"
+        app:layout_constraintTop_toBottomOf="@id/movietitle"
+        app:layout_constraintStart_toEndOf="@id/movieslash"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/detailss"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:text="English"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/white"
+        android:id="@+id/txtview"
+        app:layout_constraintTop_toBottomOf="@id/langtxt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sttxt"
+        app:layout_constraintTop_toBottomOf="@id/txtview"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Show Time: "
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showttxt"
+        app:layout_constraintTop_toBottomOf="@id/txtview"
+        app:layout_constraintStart_toEndOf="@id/sttxt"
+        android:text="Show Time: "
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stypetxt"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/sttxt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Seat/s: "
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seatttxt"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/showttxt"
+        app:layout_constraintStart_toEndOf="@id/sttxt"
+        android:text="12354654"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datetv"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/stypetxt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Date: "
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/datetxt"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/seatttxt"
+        app:layout_constraintStart_toEndOf="@id/sttxt"
+        android:text="12354654"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@id/datetxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white"
+        android:id="@+id/custdetview"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custdettxt"
+        app:layout_constraintTop_toBottomOf="@id/custdetview"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Customer Details"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20ssp"
+        android:layout_margin="@dimen/_15sdp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custname"
+        app:layout_constraintTop_toBottomOf="@id/custdettxt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Full Name: "
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custnametxt"
+        app:layout_constraintTop_toBottomOf="@id/custdettxt"
+        app:layout_constraintStart_toEndOf="@id/sttxt"
+        android:text="Full Name: "
+        android:layout_marginTop="@dimen/_15sdp"
+
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custemail"
+        app:layout_constraintTop_toBottomOf="@id/custname"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Email: "
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custemailtxt"
+        app:layout_constraintTop_toBottomOf="@id/custnametxt"
+        app:layout_constraintStart_toEndOf="@id/sttxt"
+        android:text="Show Time: "
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custphone"
+        app:layout_constraintTop_toBottomOf="@id/custemail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Phone: "
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custphonetxt"
+        app:layout_constraintTop_toBottomOf="@id/custemailtxt"
+        app:layout_constraintStart_toEndOf="@id/sttxt"
+        android:text="Show Time: "
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@id/custphonetxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white"
+        android:id="@+id/nextviews"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amunttxt"
+        app:layout_constraintTop_toBottomOf="@id/nextviews"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Payment"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20ssp"
+        android:layout_margin="@dimen/_15sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tseats"
+        app:layout_constraintTop_toBottomOf="@id/amunttxt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Total Seats: "
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tseatstxt"
+        app:layout_constraintTop_toBottomOf="@id/amunttxt"
+        app:layout_constraintStart_toEndOf="@id/sttxt"
+        android:text="seat "
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pticket"
+        app:layout_constraintTop_toBottomOf="@id/tseats"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Per Ticket: "
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ptickettxt"
+        app:layout_constraintTop_toBottomOf="@id/tseatstxt"
+        app:layout_constraintStart_toEndOf="@id/sttxt"
+        android:text="10: "
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tamount"
+        app:layout_constraintTop_toBottomOf="@id/pticket"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Total: "
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tamounttxt"
+        app:layout_constraintTop_toBottomOf="@id/ptickettxt"
+        app:layout_constraintStart_toEndOf="@id/sttxt"
+        android:text="10"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintTop_toBottomOf="@id/tamounttxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white"
+        android:id="@+id/nextviewssds"/>
+
+
+
+    <com.paypal.checkout.paymentbutton.PayPalButton
+        android:id="@+id/payment_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:paypal_button_color="silver"
+        app:paypal_button_shape="pill"
+        app:paypal_button_size="large"
+        android:visibility="visible"
+        app:paypal_label="pay"
+        app:paypal_button_enabled="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextviewssds" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
